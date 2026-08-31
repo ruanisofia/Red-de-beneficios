@@ -263,7 +263,7 @@
     <p class="intro">Comercios amigos de nuestra comunidad. Elegí uno, mostrá tu tarjeta y listo.</p>
   </header>
 
-  <p class="count">11 comercios sumados</p>
+  <p class="count" id="comercios-count"></p>
 
   <div class="list">
 
@@ -526,6 +526,11 @@
     <p>Beneficios sujetos a cambios por parte de cada comercio.</p>
   </footer>
 </div>
+
+<script>
+  var n = document.querySelectorAll('.ticket').length;
+  document.getElementById('comercios-count').textContent = n + (n === 1 ? ' comercio sumado' : ' comercios sumados');
+</script>
 
 </body>
 </html>
